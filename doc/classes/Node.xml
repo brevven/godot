@@ -382,6 +382,7 @@
 			<description>
 				Fetches a node. The [NodePath] can either be a relative path (from this node), or an absolute path (from the [member SceneTree.root]) to a node. If [param path] does not point to a valid node, generates an error and returns [code]null[/code]. Attempts to access methods on the return value will result in an [i]"Attempt to call &lt;method&gt; on a null instance."[/i] error.
 				[b]Note:[/b] Fetching by absolute path only works when the node is inside the scene tree (see [method is_inside_tree]).
+				[b]Note:[/b] May reference <link title="scene unique nodes">$DOCS_URL/tutorials/scripting/scene_unique_nodes.html</link>
 				[b]Example:[/b] Assume this method is called from the Character node, inside the following tree:
 				[codeblock lang=text]
 				 ┖╴root
